@@ -1,0 +1,18 @@
+version: '2'
+
+linters:
+  enable:
+    - revive
+  settings:
+    govet:
+      enable:
+        - shadow
+
+formatters:
+  enable:
+    - golines
+    - gofumpt
+    - goimports
+  settings:
+    golines:
+      max-len: 75
